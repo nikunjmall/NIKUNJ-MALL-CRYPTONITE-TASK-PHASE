@@ -1,0 +1,68 @@
+WRITEUP FOR BANDIT OVER THE WIRE
+
+LEVEL 0:
+•	Connected to port 2220 using bandit0 as username and bandit0 as password.
+
+ 
+
+LEVEL 01:
+•	Used “ls” command. There was only one directory ,i.e., home directory.
+•	It showed Readme file. 
+•	Opened the readme file using “cat readme”to concatenate the readme file and get the password.
+•	In this step got to learn about the general common commands like ‘cd’, ‘ls’ , ‘cat’ , etc.
+ 
+
+LEVEL 12:
+•	Used exit command to logout and logged in again as username bandit1 and used the password received in the previous step.
+•	Again, used the ‘ls’ command to get to know about the files.
+•	Got the result ‘-‘,so searched about it online and took help from friends and got to know about special character files.
+•	Used “cat ./-“ to read that get password.
+
+ 
+
+LEVEL 23:
+•	used the exit command to logout.
+•	Logged in as username bandit2 and used the previous password.
+•	Again used “ls” command got the result as “spaces in this filename”.
+•	Used the command *** cat ‘spaces in this filename’*** to concatenate on that file and got the password.
+
+ 
+
+LEVEL 34:
+•	Used the exit command to logout.
+•	Logged in as username bandit3 and used the previous password.
+•	Used the “ls” command again and got to know that there was a file named “inhere”.
+•	But I was mistaken as it was not a file but a folder so I used the “cd inhere” command to get into that folder.
+•	Again used the ls command but got no files so thought that there might be hidden files.
+•	Used “ls -a” command to get the hidden files.
+•	Used “cat .hidden” command to get the hidden files and got the password.
+ 
+
+LEVEL 45:
+•	Used the exit command to logout
+•	Logged in using username bandit4 and the previous password.
+•	Again used the ls command and got to know about the inhere folder.
+•	Used the “cd inhere” command to get into inhere command.
+•	Again used ls command to know the files kept in the inhere folder and found out that there were 10 files.
+•	Extracted each file using **cat <-file(x)** where I used all the file numbers one by one inplace of x.
+ 
+
+LEVEL 56:
+•	Used the exit command to logout
+•	Logged in using username bandit5 and the previous password
+•	Used ls command and then **cd inhere** to get get into the inhere folder
+•	Again used ls command and found out many ***maybehere(x)** folders where x is the folder number
+•	It was mentioned in the question that the file was human readable and not executable and was 1033c in size.
+•	Used the command “find .-type f -size 1033c ! -executable” as it was given in the hint that find command might be used.
+•	Got the file ./maybehere07/.file02 
+•	Used cat ./maybehere07/.file02
+
+ 
+
+LEVEL 67:
+•	Used the exit command to logout 
+•	Logged in again as username bandit6 and the previous password
+•	Used the ls command and got nothing. 
+•	Understood that file was somewhere on the server. 
+•	Used the given conditions in the bandit game question and used the command ’find / -user bandit7 -group bandit6 -size 33c’
+•	The ‘/’ here searches everywhere.
