@@ -72,3 +72,30 @@ level 7-> 8
 cat /var/lib/dpkg/info/bandit7.password
 Flag - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
+level 8 > 9
+ 1. here the piping operator will be used (|)
+ 2. first to sort the data using sort command 
+ 3. and then find the line that occurs only once using the command uniq -u
+ 4. the password appears.
+
+ level 9 >10
+
+ 1. we know that password is in human readable form
+ 2. use the strings command to extract the human readable form
+ 3. it is given that it is preceded by several "=" characters.
+ 4. use the grep -E command to get the password
+
+level 10 >11
+
+1.used ls to get data.text file
+2. used cat to get the base64 data
+ used the command base64 -d to decode the base64 data and got the password 
+
+ level 11 >12
+ 1. used ls and got data.txt
+ 2. used cat command as always to read 
+ 3. got an unusal line . it was told that the password is 13 letters further in the alphabet
+ 4. here we know about the command tr
+ 5. used the command tr abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM
+ 6. got the password
+
