@@ -99,3 +99,23 @@ level 10 >11
  5. used the command tr abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM
  6. got the password
 
+level 12 > 13
+
+1. It is known that our password lies in the ‘data.txt’ file. So we display all its contents using the cat command.
+2. Given that this is a hexdump we must decode it. However before doing that we copy data.txt into another directory as instructed in the question
+3. Since we are now working on the data.txt file in the /tmp/tan directory we change our cwd to it.
+4. We now undo the hexdump and store the obtained file in a new file, namely ‘data 
+5. As we see, it is a gzip file, which means we have to use gzip command for decompression.
+So just like in the previous steps, we decompress it
+6. Since this is not compressed, we just need to extract it.
+‘data5.bin’ is our extracted file, the file type of which is:
+7. Performing the same steps as we did previously in order to extract files from data5.bin:
+To get the file type of data6.bin:
+8. It is a bzip2 compressed file, so we follow the same procedure as before: ‘data’ is the decompressed file.
+To get the file type of data
+9. by doing the same procedure again we get the password
+
+level 13 >14
+
+1. 
+
