@@ -1,4 +1,4 @@
-WRITEUP FOR BANDIT OVER THE WIRE
+   WRITEUP FOR BANDIT OVER THE WIRE
 
 LEVEL 0:
 •	Connected to port 2220 using bandit0 as username and bandit0 as password.
@@ -141,3 +141,15 @@ level 15 >16
 
 level 16 > 17
 
+ learnt about the command nmap , to find the ncat between 31000 and 32000
+ got 5 IPs . used ncat one by one for them and got a private key in one of them 
+ copied the private key and used nano command to store the entire key in a file called pvt.key
+ used the ssh command learnt earlier to enter the private key and the bandit17 host
+ ran ls to get two files named password.new and password.old
+ to remove the duplicates used the command duplicate.newpasswords.old and got two passwords
+ remembered in the prev question pass was stored in /etc/bandit__pass
+ used cat bandit 17 and got the password
+
+ level 17 > 18
+
+ 
