@@ -115,6 +115,25 @@ To get the file type of data6.bin:
 To get the file type of data
 9. by doing the same procedure again we get the password
 
+level 13 > 14
+
+1. the password was not stored in bandit13
+2. used ls and got the ssh.privatekey
+3. here we come to know about a new ssh function that can be used to login in bandit14 using the private key that was present
+ 4. used the command ssh bandit14@localhost -i ssh.privatekey and got the access to bandit14
+ 5. searches for the file name given in the question and got a list of passwords
+6. used cat to obtain the password
+
+level 14>15
+
+1. in the question it is given that we have to use the port 30000 and change the ip address to obtain the key
+2. here we come to know about the function telnet 
+3. used the function telnet and change the port to 30000 
+4. it asked to submit the key in the previous question and got a new key to log in to bandit 15
+
+level 15 >16
+
+1.
 level 13 >14
 
 1. 
