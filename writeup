@@ -133,8 +133,11 @@ level 14>15
 
 level 15 >16
 
-1.
-level 13 >14
+1.it was given to connect to port 30001 as localhost
+2. came to know about the command ncat 
+3.used the command ncat localhost 30001 --ssl and then entered the previous password.
+4. it showed correct and then I got the correct password for the next level
+5. use exit and logged out.
 
-1. 
+level 16 > 17
 
